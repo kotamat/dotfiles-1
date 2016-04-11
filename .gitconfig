@@ -9,9 +9,13 @@
 [alias]
     st = status
     co = checkout
+    cb = checkout -b
+    b = branch
     ci = commit
     df = diff
     t  = typechange
+    f  = fetch
+    m  = merge
     graph = log --graph --date-order --all --pretty=format:'%h %Cred%d %Cgreen%ad %Cblue%cn %Creset%s' --date=short
 
 [help]
@@ -24,8 +28,8 @@
     default = matching
 
 [user]
-    name  = b4b4r07
-    email = b4b4r07@gmail.com
+    name  = kotamat
+    email = kota-matsumoto@altplus.co.jp
 
 [pager]
     log  = diff-highlight | less -RX
@@ -38,22 +42,5 @@
 
 [ghq]
     root = ~/src
-
 [merge]
-    tool = vimdiff
-
-[zgit "keybind"]
-    echo   = ctrl-e
-    add    = ctrl-a
-    add-p  = ctrl-w
-    commit = ctrl-c
-    diff   = ctrl-d
-    reset  = ctrl-r
-
-[zgit "default"]
-    toggle-all = ctrl-z
-
-[zgit "core"]
-    action   = status
-    tool     = enhancd
-    lessopen = "| pygmentize -O style=solarized -f console256 -g %s"
+    tool = vimdiff2
